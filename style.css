@@ -1,0 +1,305 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+}
+header {
+    background-color: yellow;
+    
+}
+header span {
+    font-weight: bold;
+    font-size: 24px;
+}
+.header-text {
+    text-align: center;
+    padding: 15px;
+}
+.header-text-price {
+    color: red;
+    font-size: 32px;
+}
+.header-text-price sup {
+    font-size: 20px;
+}
+.header-text-why {
+    background-color: red;
+    color: white;
+    font-size: 20px; 
+}
+.header-img {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.header-img span {
+    font-size: 18px;
+    font-weight: normal;
+}
+.header-img div {
+    margin: 0 30px;
+    text-align: center;
+}
+main {
+    text-align: center;
+    margin:  20px;
+}
+.main-text {
+    font-size: 24px;
+    font-weight: bold;
+}
+.main-text-down {
+    font-size: 18px;
+    font-weight: normal;
+}
+.main-img {
+ display: flex;
+ justify-content: center;
+ margin: 30px 0;
+ font-size: 20px;
+ 
+}
+.main-img-1 {
+    margin: 0 20px;
+    box-shadow: 19px 10px 15px 0px rgb(128 128 128 / 66%);
+    padding: 15px;
+}
+.main-img-text-down {
+    color: red;
+    font-weight: bold;
+    
+}
+.main-img button {
+    background-color: rgb(255, 30, 30);
+    color: white;
+    border: 2px solid brown;
+    padding: 7px 10px;
+    margin: 10px;
+    font-size: 16px;
+}
+.tp {
+    height: 100px;
+    position: fixed;
+    right: 0px;
+    bottom: 20px;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+.tp:hover {
+    transform: scale(1.5);
+}
+.podarok {
+    position: absolute;
+    top: 10px;
+    left: -10px;
+    height: 80px;
+}
+.rosigris {
+    background-color: red;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 10px 5px 7px 0px rgb(65, 63, 63);
+}
+.text-ros {
+    padding: 10px 20px;
+}
+.ros-1 {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+.ros-2 {
+    color: yellow;
+    font-weight: bold;
+    font-size: 18px;
+}
+.ros-img img {
+height: 150px;
+display: block;
+}
+.futbolki-other div img {
+   border: 1px solid rgb(0, 0, 0);
+
+}
+.futbolki-other div button {
+ margin: 20px;
+ background-color: red;
+ color: white;
+ border: 2px solid red;
+ font-size: 16px;
+}
+.futbolki-other {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    
+}
+.other-img {
+    margin: 20px;
+    text-align:center ;
+}
+.nadpis {
+    margin: 10px 100px;
+    background-color: rgba(209, 209, 209, 0.308);
+    font-size: 18px;
+    height: 50px;
+    display: flex;
+    align-items: center
+}
+.nadpis span {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.forma {
+    font-size: 16px;
+    font-weight: bold;
+    max-width: 300px;
+    margin: 30px auto;
+    
+}
+.forma form {
+    justify-content: center;
+}
+.forma-div-1 {
+    background-color: yellow;
+    display: block;
+    margin: 10px 30px;
+    padding: 20px;
+    
+}
+.forma-div-1 span {
+    text-align: center;
+}
+.forma-text-1 { 
+    font-size: 24px;
+    margin-left: 30px;
+}
+.forma legend {
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+.formaa {
+justify-content: center;
+margin: 0 auto;
+
+}
+.forma input {
+    background-color: rgba(192, 192, 192, 0.26);
+    border: none;
+    box-shadow: 3px 3px 1px 0px gray;
+    height: 30px;
+    width: 300px;
+}
+.formaa button {
+display: block;
+ margin-top: 50px;
+ background-color: rgb(26, 211, 26);
+ border-radius: 40px;
+ width: 300px;
+ height: 50px;
+ border: none;
+ color: white;
+ font-size: 24px;
+
+}
+.form-final-div {
+width: 300px;
+height: 1px;
+box-shadow: 6px 6px 5px 0px rgb(0, 0, 0);
+}
+.form-final-span {
+color: rgb(47, 255, 99);
+
+}
+.modalwindow {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    padding-top: 100px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.315);
+}
+.InsideModalWind {
+    background-color: white;
+    margin: auto;
+    padding: 20px;
+    border:  1px solid gray;
+    border-radius: 20px;
+    width: 80%;
+    animation-name: animate-modal;
+    animation-duration: 1s;
+    position: relative;
+}
+@keyframes animate-modal {
+    0% { 
+       top: -300px;
+       opacity: 0;
+    }    
+    100% {
+       top: 0;
+       opacity: 1;
+    }
+}
+
+.closewind {
+    font-weight: bold;
+    font-size: 28px;
+    float: right;
+    color: rgb(61, 61, 61);
+}
+.closewind:hover {
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+.modalwindoww {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    padding-top: 100px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.315);
+}
+.InsideModalWindow {
+    background-color: white;
+    margin: auto;
+    padding: 20px;
+    border:  1px solid gray;
+    border-radius: 20px;
+    width: 80%;
+    animation-name: animate-modall;
+    animation-duration: 1s;
+    position: relative;
+}
+@keyframes animate-modall {
+    0% { 
+       top: -300px;
+       opacity: 0;
+    }    
+    100% {
+       top: 0;
+       opacity: 1;
+    }
+}
+
+.closewindow {
+    font-weight: bold;
+    font-size: 28px;
+    float: right;
+    color: rgb(61, 61, 61);
+}
+.closewindow:hover {
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+.raiting {
+    width: 500px;
+    margin: 100px auto;
+    text-align: center;
+}

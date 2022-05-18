@@ -7,10 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Онлайн магазин футболок</title>
     <link rel="stylesheet" href="style.css">
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
@@ -49,17 +46,23 @@
             <span class="main-text-down">100% хлопок</span>
         </div>
         <div class="main-img">
+            <div class="arrow">
+                <img src="img/left.PNG" alt="стрелочка влево" width="50px" class="arrow" onclick="rand_tshirt()">
+            </div>
             <div class="main-img-1">
-                <img src="img/photo_1.png" alt="футболка"> <br>
+                <img src="img/tshirt-1.jpg" id="img-1" alt="футболка" width="300px" height="270px"> <br>
                 <span>Футболка</span> <br>
                 <span class="main-img-text-down">499 руб</span> <br>
                 <button>Добавить в заказ</button>
             </div>
             <div class="main-img-1">
-                <img src="img/photo.png" alt="футболка"><br>
+                <img src="img/tshirt-2.jpg" id="img-2" alt="футболка" width="300px" height="270px"><br>
                 <span>Футболка</span> <br>
                 <span class="main-img-text-down">499 руб</span><br>
                 <button>Добавить в заказ</button>
+            </div>
+            <div class="arrow">
+                <img src="img/right.PNG" alt="стрелочка вправо" width="50px" class="arrow" onclick="rand_tshirt()">
             </div>
         </div>
     </main>
@@ -172,14 +175,14 @@
         <img src="img/photo.png" id="shirt-5" onmouseenter="star(5)" width="78px" height="68px">
         <p onclick="resetRating()" class="sbros">СБРОС</p>
         <button id="sendRating">Отправить</button>
-    
+
     </div>
-    
+
     <script src="script.js"></script>
     <script src="wow.min.js"></script>
-              <script>
-              new WOW().init();
-              </script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 
 </html>

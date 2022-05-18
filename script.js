@@ -78,3 +78,15 @@ function resetRating() {
     }
 }
 
+function rand_tshirt() {
+ 
+    const arr = ["img/tshirt-1.jpg", "img/tshirt-2.jpg", "img/tshirt-3.jpg"];
+    let rand_n =Math.floor(Math.random()*3);
+
+    let rand = arr[rand_n];
+    let img1 = document.getElementById("img-1").src = rand;
+    arr.splice(rand_n, 1);
+    let img2 = document.getElementById("img-2").src = arr[Math.floor(Math.random()*2)];
+
+
+}
